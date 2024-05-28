@@ -203,13 +203,13 @@ printf("\n");
 
     return 0;
 }
-
+int i, j;
 int lr4() {
    char str[1000];
     printf("Enter the string: ");
     fgets(str, sizeof(str), stdin);
 
-    int i, j;
+    
     for (i = 0, j = 0; str[i] != '\0'; i++) {
         if ((str[i] < '0' || str[i] > '9')) { 
             str[j++] = str[i]; 
