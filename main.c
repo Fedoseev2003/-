@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "lr.h"
 int main() {
@@ -67,5 +68,7 @@ int main() {
     if (n==7) {
             lr7();
     }
+    system("pause");
     return 0;
 }
+
