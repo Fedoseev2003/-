@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "lr.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -221,15 +222,17 @@ int lr4() {
 
     return 0;
 }
-int lr4dop() {
-   int containsNumber(char* str) {
+int containsNumber(char* str) {
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] >= '0' && str[i] <= '9') {
-            return 1; 
+            return 1;
         }
     }
-    return 0; 
+    return 0;
 }
+
+int lr4dop() {
+
     char str[1000];
     printf("Enter the string: ");
     fgets(str, sizeof(str), stdin); 
@@ -518,3 +521,4 @@ int lr7()
 
     return 0;
 }
+
